@@ -17,74 +17,62 @@
         .tab-pane.active {
             display: block;
         }
-        .chart-container {
-            position: relative;
-            height: 40vh;
-            width: 100%;
+        /* Custom scrollbar for tab navigation on mobile */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
         }
-        .table-custom {
-            width: 100%;
-            text-align: left;
-        }
-        .table-custom th, .table-custom td {
-            padding: 12px 16px;
-            border-bottom: 1px solid #374151; /* gray-700 */
-        }
-        .table-custom th {
-            background-color: #1F2937; /* gray-800 */
-        }
-        .table-custom tr:last-child td {
-            border-bottom: none;
-        }
-        .table-custom td.font-bold {
-            color: #F9FAFB; /* gray-50 */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white p-4 sm:p-6 md:p-8">
+<body class="bg-gray-900 text-white p-4 sm:p-6">
     <div class="max-w-7xl mx-auto">
         <header class="mb-8">
-            <h1 class="text-3xl font-bold text-cyan-400">Dasbor Proyek PT Carunt Bersama Abadi</h1>
-            <p class="text-gray-400 mt-1">Visualisasi data proyek, keuangan, dan rencana strategis.</p>
+            <h1 class="text-2xl sm:text-3xl font-bold text-cyan-400">Dasbor Proyek PT Carunt Bersama Abadi</h1>
+            <p class="text-gray-400 mt-1 text-sm sm:text-base">Visualisasi data proyek, keuangan, dan rencana strategis.</p>
         </header>
 
         <!-- Navigasi Tab -->
         <div class="mb-4 border-b border-gray-700">
-            <nav class="flex flex-wrap -mb-px" id="tab-nav">
-                <button data-tab="dashboard" class="tab-btn active text-cyan-400 border-cyan-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Dashboard Utama</button>
-                <button data-tab="pitching-equity" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Pitching Private Equity</button>
-                <button data-tab="byd-subang" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">BYD Subang</button>
-                <button data-tab="waskita-lempuing" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Waskita Lempuing</button>
-                <button data-tab="waskita-jragung" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Waskita Jragung</button>
-                <button data-tab="deltamas" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Deltamas</button>
-                <button data-tab="proyek-lain" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Proyek Lain</button>
-                <button data-tab="info-quarry" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Info Quarry Cirebon</button>
-            </nav>
+             <div class="overflow-x-auto no-scrollbar">
+                <nav class="flex -mb-px" id="tab-nav">
+                    <button data-tab="dashboard" class="tab-btn active text-cyan-400 border-cyan-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Dashboard Utama</button>
+                    <button data-tab="pitching-equity" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Pitching Private Equity</button>
+                    <button data-tab="byd-subang" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">BYD Subang</button>
+                    <button data-tab="waskita-lempuing" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Waskita Lempuing</button>
+                    <button data-tab="waskita-jragung" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Waskita Jragung</button>
+                    <button data-tab="deltamas" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Deltamas</button>
+                    <button data-tab="proyek-lain" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Proyek Lain</button>
+                    <button data-tab="info-quarry" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Info Quarry Cirebon</button>
+                </nav>
+            </div>
         </div>
 
         <!-- Konten Tab -->
         <div id="tab-content">
             <!-- Tab: Dashboard Utama -->
             <div id="dashboard" class="tab-pane active">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="text-sm font-medium text-gray-400">Total Modal Proyek</h3>
-                        <p class="text-3xl font-bold text-white">Rp 9.3 M</p>
+                        <p class="text-2xl sm:text-3xl font-bold text-white">Rp 9.3 M</p>
                         <p class="text-xs text-gray-400">Termasuk proposal equity</p>
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="text-sm font-medium text-gray-400">Total Proyeksi Keuntungan</h3>
-                        <p class="text-3xl font-bold text-white">Rp 1.4 M+</p>
+                        <p class="text-2xl sm:text-3xl font-bold text-white">Rp 1.4 M+</p>
                         <p class="text-xs text-gray-400">Akumulasi per periode proyek</p>
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="text-sm font-medium text-gray-400">Jumlah Proyek Aktif & Proposal</h3>
-                        <p class="text-3xl font-bold text-white">10</p>
+                        <p class="text-2xl sm:text-3xl font-bold text-white">10</p>
                         <p class="text-xs text-gray-400">Termasuk proyek on-progress</p>
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="text-sm font-medium text-gray-400">Kelola Keuangan Investor Perorangan</h3>
-                        <p class="text-2xl font-bold text-white mt-1">Rp 2.995.800.000</p>
+                        <p class="text-xl sm:text-2xl font-bold text-white mt-1">Rp 2.995.800.000</p>
                         <p class="text-xs text-gray-400 mt-2">Dari total 13 investor</p>
                     </div>
                 </div>
@@ -109,13 +97,13 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="font-semibold mb-4 text-lg">Proyeksi Keuntungan per Proyek</h3>
-                        <div class="chart-container">
+                        <div class="relative w-full h-[50vh] md:h-[40vh]">
                             <canvas id="profitChart"></canvas>
                         </div>
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="font-semibold mb-4 text-lg">Alokasi Modal per Proyek</h3>
-                         <div class="chart-container">
+                         <div class="relative w-full h-[50vh] md:h-[40vh]">
                             <canvas id="modalChart"></canvas>
                         </div>
                     </div>
@@ -206,7 +194,7 @@
             <!-- Tab: BYD Subang -->
             <div id="byd-subang" class="tab-pane">
                 <h2 class="text-2xl font-bold mb-4">Proyek Pabrik BYD Subang - Batu Belah</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 text-center sm:text-left">
                      <div class="bg-gray-800 p-6 rounded-lg">
                         <h3 class="text-gray-400">Modal</h3>
                         <p class="text-2xl font-bold">Rp 604.800.000</p>
@@ -222,12 +210,12 @@
                 </div>
                  <div class="bg-gray-800 p-6 rounded-lg mb-6">
                     <h3 class="font-semibold text-lg mb-2">Rincian Perhitungan</h3>
-                    <p class="text-gray-300"><span class="font-medium text-gray-400">Modal:</span> 84 Mobil x Rp 3.600.000 x 2 = Rp 604.800.000</p>
-                    <p class="text-gray-300"><span class="font-medium text-gray-400">Keuntungan/Bulan:</span> (Rp 119.000/hari x 84 mobil) x 22 hari = Rp 219.912.000</p>
+                    <p class="text-gray-300 text-sm sm:text-base"><span class="font-medium text-gray-400">Modal:</span> 84 Mobil x Rp 3.600.000 x 2 = Rp 604.800.000</p>
+                    <p class="text-gray-300 text-sm sm:text-base"><span class="font-medium text-gray-400">Keuntungan/Bulan:</span> (Rp 119.000/hari x 84 mobil) x 22 hari = Rp 219.912.000</p>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg">
                     <h3 class="font-semibold mb-4 text-lg">Rencana Penambahan Armada (Dump Truck)</h3>
-                    <div class="chart-container">
+                    <div class="relative w-full h-[50vh] md:h-[40vh]">
                         <canvas id="bydArmadaChart"></canvas>
                     </div>
                 </div>
@@ -236,7 +224,7 @@
             <!-- Tab: Waskita Lempuing -->
             <div id="waskita-lempuing" class="tab-pane">
                 <h2 class="text-2xl font-bold mb-4">Proyek Waskita Irigasi Lempuing - Tanah Merah</h2>
-                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 text-center sm:text-left">
                     <div class="bg-gray-800 p-6 rounded-lg">
                         <h3 class="text-gray-400">Modal</h3>
                         <p class="text-2xl font-bold">Rp 1.150.000.000</p>
@@ -252,12 +240,12 @@
                 </div>
                  <div class="bg-gray-800 p-6 rounded-lg mb-6">
                     <h3 class="font-semibold text-lg mb-2">Rincian Perhitungan</h3>
-                    <p class="text-gray-300"><span class="font-medium text-gray-400">Modal:</span> 250 Mobil x Rp 2.300.000 x 2 = Rp 1.150.000.000</p>
-                    <p class="text-gray-300"><span class="font-medium text-gray-400">Keuntungan/Bulan:</span> (Rp 50.000/hari x 250 mobil) x 22 hari = Rp 275.000.000</p>
+                    <p class="text-gray-300 text-sm sm:text-base"><span class="font-medium text-gray-400">Modal:</span> 250 Mobil x Rp 2.300.000 x 2 = Rp 1.150.000.000</p>
+                    <p class="text-gray-300 text-sm sm:text-base"><span class="font-medium text-gray-400">Keuntungan/Bulan:</span> (Rp 50.000/hari x 250 mobil) x 22 hari = Rp 275.000.000</p>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg">
                     <h3 class="font-semibold mb-4 text-lg">Rencana Penambahan Armada (Colt Diesel)</h3>
-                    <div class="chart-container">
+                    <div class="relative w-full h-[50vh] md:h-[40vh]">
                         <canvas id="lempuingArmadaChart"></canvas>
                     </div>
                 </div>
@@ -269,7 +257,7 @@
                  <div class="space-y-6">
                     <div class="bg-gray-800 p-6 rounded-lg">
                         <h3 class="text-xl font-semibold text-cyan-400 mb-2">Material: Batu Belah</h3>
-                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             <div><p class="text-gray-400">Modal</p><p class="font-bold text-lg">Rp 400.000.000</p></div>
                             <div><p class="text-gray-400">Keuntungan/Bulan</p><p class="font-bold text-lg">Rp 148.500.000</p></div>
                             <div><p class="text-gray-400">Persentase</p><p class="font-bold text-lg text-green-400">37%</p></div>
@@ -278,7 +266,7 @@
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg">
                         <h3 class="text-xl font-semibold text-cyan-400 mb-2">Material: Pasir Filter</h3>
-                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             <div><p class="text-gray-400">Modal</p><p class="font-bold text-lg">Rp 225.000.000</p></div>
                             <div><p class="text-gray-400">Keuntungan/Bulan</p><p class="font-bold text-lg">Rp 66.000.000</p></div>
                             <div><p class="text-gray-400">Persentase</p><p class="font-bold text-lg text-green-400">29%</p></div>
@@ -287,7 +275,7 @@
                     </div>
                     <div class="bg-gray-800 p-6 rounded-lg">
                         <h3 class="text-xl font-semibold text-cyan-400 mb-2">Material: Batu Rip Rap</h3>
-                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             <div><p class="text-gray-400">Modal</p><p class="font-bold text-lg">Rp 400.000.000</p></div>
                             <div><p class="text-gray-400">Keuntungan/Bulan</p><p class="font-bold text-lg">Rp 110.000.000</p></div>
                             <div><p class="text-gray-400">Persentase</p><p class="font-bold text-lg text-green-400">27.5%</p></div>
@@ -300,7 +288,7 @@
             <!-- Tab: Deltamas -->
             <div id="deltamas" class="tab-pane">
                 <h2 class="text-2xl font-bold mb-4">Proyek Deltamas PT WHTB Glass Industry - Batu Semi Boulder</h2>
-                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 text-center sm:text-left">
                     <div class="bg-gray-800 p-6 rounded-lg">
                         <h3 class="text-gray-400">Modal</h3>
                         <p class="text-2xl font-bold">Rp 216.000.000</p>
@@ -316,12 +304,12 @@
                 </div>
                  <div class="bg-gray-800 p-6 rounded-lg mb-6">
                     <h3 class="font-semibold text-lg mb-2">Rincian Perhitungan</h3>
-                    <p class="text-gray-300"><span class="font-medium text-gray-400">Modal:</span> 30 Mobil x Rp 3.600.000 x 2 = Rp 216.000.000</p>
-                    <p class="text-gray-300"><span class="font-medium text-gray-400">Keuntungan/Bulan:</span> (Rp 100.000/hari x 30 mobil) x 16 hari = Rp 48.000.000</p>
+                    <p class="text-gray-300 text-sm sm:text-base"><span class="font-medium text-gray-400">Modal:</span> 30 Mobil x Rp 3.600.000 x 2 = Rp 216.000.000</p>
+                    <p class="text-gray-300 text-sm sm:text-base"><span class="font-medium text-gray-400">Keuntungan/Bulan:</span> (Rp 100.000/hari x 30 mobil) x 16 hari = Rp 48.000.000</p>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg">
                     <h3 class="font-semibold mb-4 text-lg">Rencana Penambahan Armada (Dump Truck)</h3>
-                    <div class="chart-container">
+                    <div class="relative w-full h-[50vh] md:h-[40vh]">
                         <canvas id="deltamasArmadaChart"></canvas>
                     </div>
                 </div>
@@ -380,7 +368,7 @@
             <div id="info-quarry" class="tab-pane">
                 <h2 class="text-2xl font-bold mb-4">Rencana Jangka Panjang: Pengelolaan Quarry Cirebon</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-gray-800 p-6 rounded-lg lg:col-span-3">
+                    <div class="bg-gray-800 p-6 rounded-lg md:col-span-2 lg:col-span-3">
                         <h3 class="font-semibold text-lg text-cyan-400 mb-2">Informasi Quarry</h3>
                         <p><span class="font-medium text-gray-400">Lokasi:</span> Gunung Hanjuang, Desa Cupang, Kabupaten Cirebon</p>
                         <p><span class="font-medium text-gray-400">Pemilik:</span> PT MMU BUKIT REZEKI</p>
@@ -425,20 +413,20 @@
                             Dibangun di atas arsitektur modern dengan keamanan berlapis.
                         </div>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg lg:col-span-3">
+                    <div class="bg-gray-800 p-6 rounded-lg md:col-span-2 lg:col-span-3">
                         <h3 class="font-semibold text-lg text-cyan-400 mb-2">Target Pengembangan (Roadmap)</h3>
-                        <div class="flex items-center space-x-4">
-                            <div class="text-center">
+                        <div class="flex flex-wrap justify-center items-center gap-y-4 gap-x-2">
+                            <div class="text-center p-2">
                                 <p class="bg-green-500 text-white rounded-full px-4 py-1 text-sm">Sudah Berjalan</p>
                                 <p class="mt-2 font-medium">Supplier & Pasar</p>
                             </div>
-                            <div class="flex-1 h-0.5 bg-gray-600"></div>
-                             <div class="text-center">
+                            <div class="text-gray-500 font-bold text-2xl hidden sm:block">&rarr;</div>
+                             <div class="text-center p-2">
                                 <p class="bg-cyan-500 text-white rounded-full px-4 py-1 text-sm">Progress</p>
                                 <p class="mt-2 font-medium">Quarry Tambang</p>
                             </div>
-                            <div class="flex-1 h-0.5 bg-gray-600"></div>
-                            <div class="text-center">
+                             <div class="text-gray-500 font-bold text-2xl hidden sm:block">&rarr;</div>
+                            <div class="text-center p-2">
                                 <p class="bg-yellow-500 text-black rounded-full px-4 py-1 text-sm">Target Selanjutnya</p>
                                 <p class="mt-2 font-medium">Armada Truck & Konstruksi</p>
                             </div>
@@ -564,8 +552,4 @@
     </script>
 </body>
 </html>
-
-
-
-
 
