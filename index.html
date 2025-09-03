@@ -76,21 +76,36 @@
                         <p class="text-xs text-gray-400 mt-2">Dari total 13 investor</p>
                     </div>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-8">
-                    <h3 class="font-semibold mb-4 text-lg text-cyan-400">Transparansi & Dampak Sosial</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-300">
-                        <div>
-                            <h4 class="font-bold text-white mb-2">Hubungan Investor</h4>
-                            <ul class="list-disc list-inside space-y-2 text-sm">
-                                <li>Transaksi keuntungan dan laporan diberikan secara harian kepada investor untuk menjaga transparansi penuh.</li>
-                            </ul>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="font-semibold mb-4 text-lg text-cyan-400">Transparansi & Dampak Sosial</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <div>
+                                <h4 class="font-bold text-white mb-2">Hubungan Investor</h4>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li>Transaksi keuntungan dan laporan diberikan secara harian untuk menjaga transparansi penuh.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-2">Kontribusi Sosial</h4>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li>Menciptakan lapangan kerja bagi 6 individu secara langsung.</li>
+                                    <li>Memberikan dampak positif bagi keluarga pekerja, membantu memenuhi kebutuhan esensial.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="font-bold text-white mb-2">Kontribusi Sosial</h4>
-                            <ul class="list-disc list-inside space-y-2 text-sm">
-                                <li>Menciptakan lapangan kerja bagi 6 individu secara langsung.</li>
-                                <li>Memberikan dampak positif bagi keluarga pekerja, membantu memenuhi kebutuhan esensial seperti susu anak.</li>
-                            </ul>
+                    </div>
+                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="font-semibold mb-4 text-lg text-cyan-400">Model Bisnis & Alokasi Keuntungan</h3>
+                        <div class="space-y-4 text-gray-300">
+                            <div>
+                                <h4 class="font-bold text-white mb-2">Pembagian Keuntungan (60% Pelaksana / 40% Investor)</h4>
+                                <p class="text-sm mb-2">Skema ini dirancang untuk mencerminkan tanggung jawab dan risiko yang diemban oleh masing-masing pihak.</p>
+                                <ul class="list-disc list-inside space-y-2 text-sm">
+                                    <li><span class="font-semibold">Porsi Pelaksana (60%)</span> menanggung seluruh biaya operasional, manajemen risiko lapangan, koordinasi, hubungan supplier, hingga proses penagihan dan laporan keuangan.</li>
+                                    <li><span class="font-semibold">Porsi Investor (40%)</span> merupakan imbal hasil bersih atas investasi modal, yang diberikan secara transparan dan harian.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -214,7 +229,7 @@
                     <p class="text-gray-300 text-sm sm:text-base"><span class="font-medium text-gray-400">Keuntungan/Bulan:</span> (Rp 119.000/hari x 84 mobil) x 22 hari = Rp 219.912.000</p>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="font-semibold mb-4 text-lg">Rencana Penambahan Armada (Dump Truck)</h3>
+                    <h3 class="font-semibold mb-4 text-lg">Realisasi Penambahan Armada (Dump Truck)</h3>
                     <div class="relative w-full h-[50vh] md:h-[40vh]">
                         <canvas id="bydArmadaChart"></canvas>
                     </div>
@@ -244,7 +259,7 @@
                     <p class="text-gray-300 text-sm sm:text-base"><span class="font-medium text-gray-400">Keuntungan/Bulan:</span> (Rp 50.000/hari x 250 mobil) x 22 hari = Rp 275.000.000</p>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="font-semibold mb-4 text-lg">Rencana Penambahan Armada (Colt Diesel)</h3>
+                    <h3 class="font-semibold mb-4 text-lg">Realisasi Penambahan Armada (Colt Diesel)</h3>
                     <div class="relative w-full h-[50vh] md:h-[40vh]">
                         <canvas id="lempuingArmadaChart"></canvas>
                     </div>
@@ -308,7 +323,7 @@
                     <p class="text-gray-300 text-sm sm:text-base"><span class="font-medium text-gray-400">Keuntungan/Bulan:</span> (Rp 100.000/hari x 30 mobil) x 16 hari = Rp 48.000.000</p>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg">
-                    <h3 class="font-semibold mb-4 text-lg">Rencana Penambahan Armada (Dump Truck)</h3>
+                    <h3 class="font-semibold mb-4 text-lg">Realisasi Penambahan Armada (Dump Truck)</h3>
                     <div class="relative w-full h-[50vh] md:h-[40vh]">
                         <canvas id="deltamasArmadaChart"></canvas>
                     </div>
@@ -320,46 +335,62 @@
                  <h2 class="text-2xl font-bold mb-4">Proyek On-Progress Lainnya</h2>
                  <div class="space-y-6">
                     <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-cyan-400 mb-2">Proyek PT China West</h3>
-                        <p>Estimasi pendapatan bulanan dari 20 unit Dump Truck.</p>
-                        <p class="text-2xl font-bold mt-2">Rp 16.800.000 / bulan</p>
-                        <div class="mt-4 bg-gray-900 p-4 rounded-md">
-                            <h4 class="font-semibold text-lg mb-2">Rincian Perhitungan</h4>
-                            <div class="flex justify-between items-center text-sm">
-                                <span class="text-gray-400">Trip Reguler (12 trip/bulan x 20 unit x Rp 60.000)</span>
-                                <span>Rp 14.400.000</span>
+                        <h3 class="text-xl font-semibold text-cyan-400 mb-4">Proyek PT China West</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 text-sm text-center sm:text-left">
+                            <div><p class="text-gray-400">Jumlah Unit</p><p class="font-bold text-lg">20 Dump Truck</p></div>
+                            <div><p class="text-gray-400">Modal/Unit</p><p class="font-bold text-lg">Rp 6.100.000</p></div>
+                            <div><p class="text-gray-400">Pembayaran/Unit</p><p class="font-bold text-lg">Rp 6.160.000</p></div>
+                            <div><p class="text-gray-400">Selisih Kotor/Unit</p><p class="font-bold text-lg">Rp 60.000</p></div>
+                        </div>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="bg-gray-900 p-4 rounded-md">
+                                <h4 class="font-semibold mb-2">Perhitungan Trip Reguler</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Laba bersih per trip per unit: <span class="font-medium">Rp 60.000</span></li>
+                                    <li>Dalam 1 bulan per truk (12 trip): <span class="font-medium">Rp 720.000</span></li>
+                                    <li>Total 20 truk per bulan: <span class="font-bold">Rp 14.400.000</span></li>
+                                </ul>
                             </div>
-                            <div class="flex justify-between items-center text-sm mt-1">
-                                <span class="text-gray-400">Bonus Pekerjaan (setara 2 ritase tambahan)</span>
-                                <span>+ Rp 2.400.000</span>
+                            <div class="bg-gray-900 p-4 rounded-md">
+                                <h4 class="font-semibold mb-2">Perhitungan Tambahan (2 Amunisi Minggu ke-2)</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>1 amunisi (1 ritase x 20 DT): <span class="font-medium">Rp 1.200.000</span></li>
+                                    <li>Total tambahan (2 amunisi): <span class="font-bold">Rp 2.400.000</span></li>
+                                </ul>
                             </div>
-                             <hr class="border-gray-600 my-2">
-                             <div class="flex justify-between items-center font-bold">
-                                <span>Total Potensi Pendapatan</span>
-                                <span>Rp 16.800.000</span>
+                            <div class="bg-gray-700 p-4 rounded-md text-center">
+                                <h4 class="font-semibold text-lg">Total Potensi Pendapatan Bulanan</h4>
+                                <p class="text-2xl font-bold text-green-400 mt-1">Rp 16.800.000</p>
                             </div>
                         </div>
                     </div>
                      <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-cyan-400 mb-2">Proyek PT Losaran</h3>
-                        <p>Proyeksi keuntungan bulanan dari 20 Dump Truck.</p>
-                         <p class="text-2xl font-bold mt-2">Rp 15.820.000 / bulan</p>
-                         <div class="mt-4 bg-gray-900 p-4 rounded-md">
-                             <h4 class="font-semibold text-lg mb-2">Rincian Keuntungan & Skema Bagi Hasil</h4>
-                             <div class="flex justify-between items-center font-bold">
-                                <span>Total Keuntungan Bersih</span>
-                                <span>Rp 15.820.000</span>
+                        <h3 class="text-xl font-semibold text-cyan-400 mb-4">Proyek PT Losaran</h3>
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-sm text-center sm:text-left">
+                           <div><p class="text-gray-400">Jumlah Ritase/Bulan</p><p class="font-bold text-lg">7</p></div>
+                           <div><p class="text-gray-400">Keuntungan Bersih/Ritase</p><p class="font-bold text-lg">Rp 113.000</p></div>
+                        </div>
+                        <div class="space-y-4 text-sm">
+                            <div class="bg-gray-900 p-4 rounded-md">
+                                <h4 class="font-semibold mb-2">Perhitungan Keuntungan Bulanan</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Keuntungan per DT/bulan: <span class="font-medium">Rp 791.000</span></li>
+                                    <li>Total Keuntungan (20 DT): <span class="font-bold text-green-400">Rp 15.820.000</span></li>
+                                </ul>
                             </div>
-                             <hr class="border-gray-600 my-2">
-                             <div class="flex justify-between items-center text-sm mt-1">
-                                <span class="text-gray-400">Untuk Investor (60%)</span>
-                                <span class="font-semibold text-cyan-400">Rp 9.492.000</span>
+                            <div class="bg-gray-900 p-4 rounded-md">
+                                <h4 class="font-semibold mb-2">Skema Bagi Hasil (60/40)</h4>
+                                 <div class="flex justify-between items-center mt-1">
+                                    <span class="text-gray-400">Untuk Investor (60%)</span>
+                                    <span class="font-semibold text-cyan-400">Rp 9.492.000</span>
+                                </div>
+                                 <div class="flex justify-between items-center">
+                                    <span class="text-gray-400">Untuk Operasional (40%)</span>
+                                    <span>Rp 6.328.000</span>
+                                </div>
                             </div>
-                             <div class="flex justify-between items-center text-sm">
-                                <span class="text-gray-400">Untuk Operasional (40%)</span>
-                                <span>Rp 6.328.000</span>
-                            </div>
-                         </div>
+                        </div>
                     </div>
                  </div>
             </div>
