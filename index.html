@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dasbor Proyek - PT Carunt Bersama Abadi</title>
+    <title>Project Summary - PT Carunt Bersama Abadi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,25 +27,25 @@
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white p-4 sm:p-6">
+<body class="bg-gray-100 text-gray-800 p-4 sm:p-6">
     <div class="max-w-7xl mx-auto">
         <header class="mb-8">
-            <h1 class="text-2xl sm:text-3xl font-bold text-cyan-400">Dasbor Proyek PT Carunt Bersama Abadi</h1>
-            <p class="text-gray-400 mt-1 text-sm sm:text-base">Visualisasi data proyek, keuangan, dan rencana strategis.</p>
+            <h1 class="text-2xl sm:text-3xl font-bold text-cyan-600">Dasbor Proyek PT Carunt Bersama Abadi</h1>
+            <p class="text-gray-600 mt-1 text-sm sm:text-base">Visualisasi data proyek, keuangan, dan rencana strategis.</p>
         </header>
 
         <!-- Navigasi Tab -->
-        <div class="mb-4 border-b border-gray-700">
+        <div class="mb-4 border-b border-gray-300">
              <div class="overflow-x-auto no-scrollbar">
                 <nav class="flex -mb-px" id="tab-nav">
-                    <button data-tab="dashboard" class="tab-btn active text-cyan-400 border-cyan-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Dashboard Utama</button>
-                    <button data-tab="pitching-equity" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Pitching Private Equity</button>
-                    <button data-tab="byd-subang" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">BYD Subang</button>
-                    <button data-tab="waskita-lempuing" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Waskita Lempuing</button>
-                    <button data-tab="waskita-jragung" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Waskita Jragung</button>
-                    <button data-tab="deltamas" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Deltamas</button>
-                    <button data-tab="proyek-finished" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Proyek Finished</button>
-                    <button data-tab="info-quarry" class="tab-btn text-gray-400 hover:text-white hover:border-gray-500 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Info Quarry Cirebon</button>
+                    <button data-tab="dashboard" class="tab-btn active text-cyan-600 border-cyan-600 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Dashboard Utama</button>
+                    <button data-tab="pitching-equity" class="tab-btn text-gray-500 hover:text-gray-700 hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Pitching Private Equity</button>
+                    <button data-tab="byd-subang" class="tab-btn text-gray-500 hover:text-gray-700 hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">BYD Subang</button>
+                    <button data-tab="waskita-lempuing" class="tab-btn text-gray-500 hover:text-gray-700 hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Waskita Lempuing</button>
+                    <button data-tab="waskita-jragung" class="tab-btn text-gray-500 hover:text-gray-700 hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Waskita Jragung</button>
+                    <button data-tab="deltamas" class="tab-btn text-gray-500 hover:text-gray-700 hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Deltamas</button>
+                    <button data-tab="proyek-finished" class="tab-btn text-gray-500 hover:text-gray-700 hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Proyek Finished</button>
+                    <button data-tab="info-quarry" class="tab-btn text-gray-500 hover:text-gray-700 hover:border-gray-400 whitespace-nowrap py-4 px-6 border-b-2 font-medium text-sm">Info Quarry Cirebon</button>
                 </nav>
             </div>
         </div>
@@ -55,45 +55,45 @@
             <!-- Tab: Dashboard Utama -->
             <div id="dashboard" class="tab-pane active">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-sm font-medium text-gray-400">Total Modal Proyek</h3>
-                        <p class="text-2xl sm:text-3xl font-bold text-white">Rp 9.8 M</p>
-                        <p class="text-xs text-gray-400">Termasuk proposal equity</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-sm font-medium text-gray-500">Total Modal Proyek</h3>
+                        <p class="text-2xl sm:text-3xl font-bold text-gray-900">Rp 9.8 M</p>
+                        <p class="text-xs text-gray-500">Termasuk proposal equity</p>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-sm font-medium text-gray-400">Total Proyeksi Keuntungan</h3>
-                        <p class="text-2xl sm:text-3xl font-bold text-white">Rp 1.37 M+</p>
-                        <p class="text-xs text-gray-400">Akumulasi per periode proyek</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-sm font-medium text-gray-500">Total Proyeksi Keuntungan</h3>
+                        <p class="text-2xl sm:text-3xl font-bold text-gray-900">Rp 1.37 M+</p>
+                        <p class="text-xs text-gray-500">Akumulasi per periode proyek</p>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-sm font-medium text-gray-400">Jumlah Proyek Aktif & Proposal</h3>
-                        <p class="text-2xl sm:text-3xl font-bold text-white">8</p>
-                        <p class="text-xs text-gray-400">Termasuk proyek on-progress</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-sm font-medium text-gray-500">Jumlah Proyek Aktif & Proposal</h3>
+                        <p class="text-2xl sm:text-3xl font-bold text-gray-900">8</p>
+                        <p class="text-xs text-gray-500">Termasuk proyek on-progress</p>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-sm font-medium text-gray-400">Kelola Keuangan Investor Perorangan</h3>
-                        <p class="text-xl sm:text-2xl font-bold text-white mt-1">Rp 2.995.800.000</p>
-                        <p class="text-xs text-gray-400 mt-2">Dari total 13 investor</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-sm font-medium text-gray-500">Kelola Keuangan Investor Perorangan</h3>
+                        <p class="text-xl sm:text-2xl font-bold text-gray-900 mt-1">Rp 2.995.800.000</p>
+                        <p class="text-xs text-gray-500 mt-2">Dari total 13 investor</p>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h3 class="font-semibold mb-4 text-lg text-cyan-400">Skema Bagi Hasil & Tanggung Jawab</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-semibold mb-4 text-lg text-cyan-600">Skema Bagi Hasil & Tanggung Jawab</h3>
                         <div class="grid grid-cols-2 gap-6">
                             <div>
-                                <h4 class="font-bold text-white text-3xl">40%</h4>
-                                <h5 class="font-semibold text-gray-300">Investor</h5>
-                                <ul class="list-disc list-inside space-y-2 text-sm mt-3 text-gray-400">
+                                <h4 class="font-bold text-gray-900 text-3xl">40%</h4>
+                                <h5 class="font-semibold text-gray-700">Investor</h5>
+                                <ul class="list-disc list-inside space-y-2 text-sm mt-3 text-gray-600">
                                     <li>Laporan Keuangan</li>
                                     <li>Pembagian Keuntungan</li>
                                 </ul>
                             </div>
                             <div>
-                                <h4 class="font-bold text-white text-3xl">60%</h4>
-                                <h5 class="font-semibold text-gray-300">Pelaksana (PT CBA)</h5>
+                                <h4 class="font-bold text-gray-900 text-3xl">60%</h4>
+                                <h5 class="font-semibold text-gray-700">Pelaksana (PT CBA)</h5>
                                  <p class="text-xs text-gray-500 mt-1">Alokasi 60% bagi hasil untuk Pelaksana mencakup tanggung jawab penuh atas semua aspek operasional dan risiko di lapangan.</p>
-                                <ul class="list-disc list-inside space-y-2 text-sm mt-3 text-gray-400">
+                                <ul class="list-disc list-inside space-y-2 text-sm mt-3 text-gray-600">
                                     <li>Operasional & Risiko Lapangan</li>
                                     <li>Koordinasi Muspika</li>
                                     <li>Manajemen Supplier</li>
@@ -102,17 +102,17 @@
                             </div>
                         </div>
                     </div>
-                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h3 class="font-semibold mb-4 text-lg text-cyan-400">Transparansi & Dampak Sosial</h3>
-                         <div class="text-gray-300">
+                     <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-semibold mb-4 text-lg text-cyan-600">Transparansi & Dampak Sosial</h3>
+                         <div class="text-gray-700">
                             <div>
-                                <h4 class="font-bold text-white mb-2">Hubungan Investor</h4>
+                                <h4 class="font-bold text-gray-900 mb-2">Hubungan Investor</h4>
                                 <ul class="list-disc list-inside space-y-2 text-sm">
                                     <li>Transaksi keuntungan dan laporan diberikan secara harian kepada investor untuk menjaga transparansi penuh.</li>
                                 </ul>
                             </div>
                             <div class="mt-4">
-                                <h4 class="font-bold text-white mb-2">Kontribusi Sosial</h4>
+                                <h4 class="font-bold text-gray-900 mb-2">Kontribusi Sosial</h4>
                                 <ul class="list-disc list-inside space-y-2 text-sm">
                                     <li>Menciptakan lapangan kerja bagi 6 individu secara langsung.</li>
                                     <li>Memberikan dampak positif bagi keluarga pekerja, membantu memenuhi kebutuhan esensial seperti susu anak.</li>
@@ -123,13 +123,13 @@
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
                         <h3 class="font-semibold mb-4 text-lg">Proyeksi Keuntungan per Proyek</h3>
                         <div class="relative w-full h-[50vh] md:h-[40vh]">
                             <canvas id="profitChart"></canvas>
                         </div>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
                         <h3 class="font-semibold mb-4 text-lg">Alokasi Modal per Proyek</h3>
                          <div class="relative w-full h-[50vh] md:h-[40vh]">
                             <canvas id="modalChart"></canvas>
@@ -143,14 +143,14 @@
                 <h2 class="text-2xl font-bold mb-6">Proposal Kerjasama dengan Private Equity</h2>
                 <div class="space-y-8">
                     <!-- Proyek Cijurey -->
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-cyan-400 mb-4">1. Project Cijurey - PT Dirgantara Betonindo</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-cyan-600 mb-4">1. Project Cijurey - PT Dirgantara Betonindo</h3>
                         <div class="space-y-6">
-                            <div class="bg-gray-900 p-4 rounded-lg">
+                            <div class="bg-gray-50 p-4 rounded-lg">
                                 <h4 class="font-semibold text-lg mb-3">Tabel Harga per m³</h4>
                                 <div class="overflow-x-auto">
                                     <table class="w-full text-sm text-left">
-                                        <thead class="bg-gray-700">
+                                        <thead class="bg-gray-200">
                                             <tr>
                                                 <th class="p-2">Material</th>
                                                 <th class="p-2">Harga Beli (dari Quarry)</th>
@@ -158,7 +158,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="border-b border-gray-600">
+                                            <tr class="border-b border-gray-200">
                                                 <td class="p-2">Batu Split</td>
                                                 <td class="p-2">Rp 228.571</td>
                                                 <td class="p-2">Rp 240.000</td>
@@ -173,11 +173,11 @@
                                 </div>
                             </div>
 
-                            <div class="bg-gray-900 p-4 rounded-lg">
+                            <div class="bg-gray-50 p-4 rounded-lg">
                                 <h4 class="font-semibold text-lg mb-3">Analisis Kebutuhan Modal (Pengiriman 1 Periode / 15 Hari)</h4>
                                 <div class="overflow-x-auto">
                                     <table class="w-full text-sm text-left">
-                                        <thead class="bg-gray-700">
+                                        <thead class="bg-gray-200">
                                             <tr>
                                                 <th class="p-2">Pengiriman</th>
                                                 <th class="p-2">Jml Truk</th>
@@ -187,7 +187,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="border-b border-gray-600">
+                                            <tr class="border-b border-gray-200">
                                                 <td class="p-2">Batu Split</td>
                                                 <td class="p-2">6</td>
                                                 <td class="p-2">28 m³</td>
@@ -202,7 +202,7 @@
                                                 <td class="p-2 font-semibold">Rp 550.800.000</td>
                                             </tr>
                                         </tbody>
-                                        <tfoot class="font-bold text-white">
+                                        <tfoot class="font-bold text-gray-900">
                                             <tr>
                                                 <td colspan="4" class="p-2 text-right border-t-2 border-cyan-500">Total Kebutuhan Modal 1 Periode:</td>
                                                 <td class="p-2 border-t-2 border-cyan-500">Rp 1.126.800.000</td>
@@ -212,11 +212,11 @@
                                 </div>
                             </div>
                             
-                            <div class="bg-gray-900 p-4 rounded-lg">
+                            <div class="bg-gray-50 p-4 rounded-lg">
                                 <h4 class="font-semibold text-lg mb-3">Analisis Potensi Keuntungan (Pembayaran 1 Periode / 15 Hari)</h4>
                                 <div class="overflow-x-auto">
                                     <table class="w-full text-sm text-left">
-                                         <thead class="bg-gray-700">
+                                         <thead class="bg-gray-200">
                                             <tr>
                                                 <th class="p-2">Penjualan</th>
                                                 <th class="p-2">Total Penjualan</th>
@@ -226,28 +226,28 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="border-b border-gray-600">
+                                            <tr class="border-b border-gray-200">
                                                 <td class="p-2">Batu Split</td>
                                                 <td class="p-2">Rp 604.800.000</td>
                                                 <td class="p-2">Rp 66.528.000</td>
                                                 <td class="p-2">Rp 671.328.000</td>
-                                                <td class="p-2 font-semibold text-green-400">Rp 28.800.000</td>
+                                                <td class="p-2 font-semibold text-green-600">Rp 28.800.000</td>
                                             </tr>
                                             <tr>
                                                 <td class="p-2">Pasir</td>
                                                 <td class="p-2">Rp 631.800.000</td>
                                                 <td class="p-2">Rp 69.498.000</td>
                                                 <td class="p-2">Rp 701.298.000</td>
-                                                <td class="p-2 font-semibold text-green-400">Rp 81.000.000</td>
+                                                <td class="p-2 font-semibold text-green-600">Rp 81.000.000</td>
                                             </tr>
                                         </tbody>
-                                        <tfoot class="font-bold text-white">
+                                        <tfoot class="font-bold text-gray-900">
                                             <tr>
                                                 <td class="p-2 text-right border-t-2 border-cyan-500">Total:</td>
                                                 <td class="p-2 border-t-2 border-cyan-500">Rp 1.236.600.000</td>
                                                 <td class="p-2 border-t-2 border-cyan-500">Rp 136.026.000</td>
                                                 <td class="p-2 border-t-2 border-cyan-500">Rp 1.372.626.000</td>
-                                                <td class="p-2 border-t-2 border-cyan-500 text-green-400">Rp 109.800.000</td>
+                                                <td class="p-2 border-t-2 border-cyan-500 text-green-600">Rp 109.800.000</td>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -255,21 +255,21 @@
                             </div>
                              
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="bg-gray-900 p-4 rounded-lg">
+                                <div class="bg-gray-50 p-4 rounded-lg">
                                     <h4 class="font-bold text-lg mb-2">Ringkasan Modal & Keuntungan</h4>
-                                    <div class="flex justify-between items-center"><span class="text-gray-400">Modal Periode 1:</span><span>Rp 1.126.800.000</span></div>
-                                    <div class="flex justify-between items-center"><span class="text-gray-400">Modal Periode 2:</span><span>Rp 1.126.800.000</span></div>
-                                    <div class="flex justify-between items-center font-bold text-lg mt-2 border-t border-red-500 pt-2"><span class="text-red-400">Total Kebutuhan Modal:</span><span>Rp 2.253.600.000</span></div>
-                                    <div class="flex justify-between items-center font-bold text-lg mt-2 border-t border-green-500 pt-2"><span class="text-green-400">Total Keuntungan Bersih:</span><span>Rp 109.800.000</span></div>
+                                    <div class="flex justify-between items-center"><span class="text-gray-500">Modal Periode 1:</span><span>Rp 1.126.800.000</span></div>
+                                    <div class="flex justify-between items-center"><span class="text-gray-500">Modal Periode 2:</span><span>Rp 1.126.800.000</span></div>
+                                    <div class="flex justify-between items-center font-bold text-lg mt-2 border-t border-red-300 pt-2"><span class="text-red-500">Total Kebutuhan Modal:</span><span>Rp 2.253.600.000</span></div>
+                                    <div class="flex justify-between items-center font-bold text-lg mt-2 border-t border-green-300 pt-2"><span class="text-green-600">Total Keuntungan Bersih:</span><span>Rp 109.800.000</span></div>
                                 </div>
-                                <div class="bg-gray-900 p-4 rounded-lg">
+                                <div class="bg-gray-50 p-4 rounded-lg">
                                     <h4 class="font-bold text-lg mb-2">Skema Pembagian Keuntungan</h4>
                                      <div class="flex justify-between items-center">
-                                        <span class="text-gray-400">Investor (40%)</span>
-                                        <span class="font-semibold text-cyan-400 text-lg">Rp 43.920.000</span>
+                                        <span class="text-gray-500">Investor (40%)</span>
+                                        <span class="font-semibold text-cyan-600 text-lg">Rp 43.920.000</span>
                                     </div>
                                      <div class="flex justify-between items-center mt-1">
-                                        <span class="text-gray-400">Pelaksana (60%)</span>
+                                        <span class="text-gray-500">Pelaksana (60%)</span>
                                         <span class="font-semibold text-lg">Rp 65.880.000</span>
                                     </div>
                                 </div>
@@ -277,14 +277,14 @@
                         </div>
                     </div>
                     <!-- Proyek Sagaindo -->
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-cyan-400 mb-4">2. Project - PT Sagaindo Jaya Abadi</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-cyan-600 mb-4">2. Project - PT Sagaindo Jaya Abadi</h3>
                         <div class="space-y-4">
-                             <div class="bg-gray-900 p-4 rounded-md">
+                             <div class="bg-gray-50 p-4 rounded-md">
                                 <h4 class="font-bold text-lg mb-2">Rincian Keuangan & PPN per Siklus</h4>
                                 <div class="overflow-x-auto">
                                     <table class="w-full text-sm text-left">
-                                        <thead class="bg-gray-700 text-gray-300">
+                                        <thead class="bg-gray-200 text-gray-600">
                                             <tr>
                                                 <th class="p-2">Material</th>
                                                 <th class="p-2">Penjualan</th>
@@ -294,45 +294,45 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr class="border-b border-gray-600">
+                                            <tr class="border-b border-gray-200">
                                                 <td class="p-2">Pasir (5.000 m³)</td>
                                                 <td class="p-2">Rp 1.350.000.000</td>
                                                 <td class="p-2">Rp 148.500.000</td>
                                                 <td class="p-2">Rp 1.498.500.000</td>
-                                                <td class="p-2 font-semibold text-green-400">Rp 200.000.000</td>
+                                                <td class="p-2 font-semibold text-green-600">Rp 200.000.000</td>
                                             </tr>
-                                            <tr class="border-b border-gray-600">
+                                            <tr class="border-b border-gray-200">
                                                 <td class="p-2">Batu Split (5.000 m³)</td>
                                                 <td class="p-2">Rp 1.350.000.000</td>
                                                 <td class="p-2">Rp 148.500.000</td>
                                                 <td class="p-2">Rp 1.498.500.000</td>
-                                                <td class="p-2 font-semibold text-green-400">Rp 200.000.000</td>
+                                                <td class="p-2 font-semibold text-green-600">Rp 200.000.000</td>
                                             </tr>
                                         </tbody>
-                                         <tfoot class="font-bold text-white">
+                                         <tfoot class="font-bold text-gray-900">
                                             <tr>
                                                 <td class="p-2 text-right border-t-2 border-cyan-500">Total:</td>
                                                 <td class="p-2 border-t-2 border-cyan-500">Rp 2.700.000.000</td>
                                                 <td class="p-2 border-t-2 border-cyan-500">Rp 297.000.000</td>
                                                 <td class="p-2 border-t-2 border-cyan-500">Rp 2.997.000.000</td>
-                                                <td class="p-2 border-t-2 border-cyan-500 text-green-400">Rp 400.000.000</td>
+                                                <td class="p-2 border-t-2 border-cyan-500 text-green-600">Rp 400.000.000</td>
                                             </tr>
                                         </tfoot>
                                     </table>
                                 </div>
                             </div>
-                            <div class="bg-gray-900 p-4 rounded-md">
+                            <div class="bg-gray-50 p-4 rounded-md">
                                 <h4 class="font-bold text-lg mb-2">Proyeksi Arus Kas</h4>
-                                <p class="text-sm text-gray-400 mb-2">Total Kebutuhan Modal: 2 x Rp 2.300.000.000 = <span class="text-red-400 font-semibold">Rp 4.600.000.000</span></p>
+                                <p class="text-sm text-gray-500 mb-2">Total Kebutuhan Modal: 2 x Rp 2.300.000.000 = <span class="text-red-500 font-semibold">Rp 4.600.000.000</span></p>
                                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                                    <div><p class="font-semibold">September</p><p class="text-red-400">-2.3 M</p><small>(Pengiriman 1)</small></div>
-                                    <div><p class="font-semibold">Oktober</p><p class="text-green-400">+2.7 M</p><small>(Penagihan 1)</small></div>
-                                    <div><p class="font-semibold">November</p><p class="text-red-400">-2.3 M</p><small>(Pengiriman 2)</small></div>
-                                    <div><p class="font-semibold">Desember</p><p class="text-green-400">+2.7 M</p><small>(Penagihan 2)</small></div>
+                                    <div><p class="font-semibold">September</p><p class="text-red-500">-2.3 M</p><small>(Pengiriman 1)</small></div>
+                                    <div><p class="font-semibold">Oktober</p><p class="text-green-600">+2.7 M</p><small>(Penagihan 1)</small></div>
+                                    <div><p class="font-semibold">November</p><p class="text-red-500">-2.3 M</p><small>(Pengiriman 2)</small></div>
+                                    <div><p class="font-semibold">Desember</p><p class="text-green-600">+2.7 M</p><small>(Penagihan 2)</small></div>
                                 </div>
-                                <p class="text-center mt-3 text-lg">Profit per siklus: <span class="font-bold text-green-400">Rp 400.000.000</span></p>
+                                <p class="text-center mt-3 text-lg">Profit per siklus: <span class="font-bold text-green-600">Rp 400.000.000</span></p>
                             </div>
-                             <div class="bg-yellow-900/50 border border-yellow-700 text-yellow-300 p-4 rounded-md">
+                             <div class="bg-yellow-50 border border-yellow-300 text-yellow-800 p-4 rounded-md">
                                 <h4 class="font-bold mb-1">Catatan Penting</h4>
                                 <ul class="list-disc list-inside text-sm">
                                     <li>Pembayaran dari PT SJA adalah 30 hari setelah pengajuan Invoice.</li>
@@ -348,39 +348,39 @@
             <!-- Tab: BYD Subang -->
             <div id="byd-subang" class="tab-pane">
                 <h2 class="text-2xl font-bold mb-4">Proyek Pabrik BYD Subang - Batu Belah</h2>
-                 <div class="bg-gray-800 p-6 rounded-lg mb-6">
-                    <h3 class="font-semibold text-lg mb-3 text-cyan-400">Rincian Perhitungan Super Detail</h3>
+                 <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                    <h3 class="font-semibold text-lg mb-3 text-cyan-600">Rincian Perhitungan Super Detail</h3>
                      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Sisi Modal -->
-                        <div class="bg-gray-900 p-4 rounded-lg">
-                            <h4 class="font-semibold text-white mb-2">Perhitungan Modal</h4>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-900 mb-2">Perhitungan Modal</h4>
                             <div class="space-y-2 text-sm">
-                                <div class="flex justify-between"><span class="text-gray-400">Harga Modal per Truk:</span><span>Rp 3.600.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Jumlah Armada:</span><span>84 Truk</span></div>
-                                <div class="flex justify-between border-t border-gray-700 pt-2 mt-2"><span class="text-gray-400">Modal per Termin:</span><span class="font-semibold">Rp 302.400.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Jumlah Termin:</span><span>2</span></div>
-                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-400">Total Kebutuhan Modal:</span><span class="text-red-400">Rp 604.800.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Harga Modal per Truk:</span><span>Rp 3.600.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Jumlah Armada:</span><span>84 Truk</span></div>
+                                <div class="flex justify-between border-t border-gray-200 pt-2 mt-2"><span class="text-gray-500">Modal per Termin:</span><span class="font-semibold">Rp 302.400.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Jumlah Termin:</span><span>2</span></div>
+                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-600">Total Kebutuhan Modal:</span><span class="text-red-500">Rp 604.800.000</span></div>
                             </div>
                         </div>
                         <!-- Sisi Keuntungan -->
-                        <div class="bg-gray-900 p-4 rounded-lg">
-                             <h4 class="font-semibold text-white mb-2">Perhitungan Keuntungan</h4>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                             <h4 class="font-semibold text-gray-900 mb-2">Perhitungan Keuntungan</h4>
                             <div class="space-y-2 text-sm">
-                                <div class="flex justify-between"><span class="text-gray-400">Keuntungan per Truk/Hari:</span><span>Rp 119.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Jumlah Armada:</span><span>84 Truk</span></div>
-                                <div class="flex justify-between border-t border-gray-700 pt-2 mt-2"><span class="text-gray-400">Total Keuntungan/Hari:</span><span class="font-semibold">Rp 9.996.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Hari Kerja/Bulan:</span><span>22 Hari</span></div>
-                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-400">Total Keuntungan/Bulan:</span><span class="text-green-400">Rp 219.912.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Keuntungan per Truk/Hari:</span><span>Rp 119.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Jumlah Armada:</span><span>84 Truk</span></div>
+                                <div class="flex justify-between border-t border-gray-200 pt-2 mt-2"><span class="text-gray-500">Total Keuntungan/Hari:</span><span class="font-semibold">Rp 9.996.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Hari Kerja/Bulan:</span><span>22 Hari</span></div>
+                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-600">Total Keuntungan/Bulan:</span><span class="text-green-600">Rp 219.912.000</span></div>
                             </div>
                         </div>
                     </div>
-                     <div class="bg-gray-900 p-4 rounded-lg mt-6 text-center">
-                        <h4 class="font-semibold text-white">Persentase Keuntungan per Bulan</h4>
-                        <p class="text-sm text-gray-400">(Rp 219.912.000 / Rp 604.800.000) x 100%</p>
-                        <p class="text-3xl font-bold text-green-400 mt-1">36%</p>
+                     <div class="bg-gray-50 p-4 rounded-lg mt-6 text-center">
+                        <h4 class="font-semibold text-gray-900">Persentase Keuntungan per Bulan</h4>
+                        <p class="text-sm text-gray-500">(Rp 219.912.000 / Rp 604.800.000) x 100%</p>
+                        <p class="text-3xl font-bold text-green-600 mt-1">36%</p>
                      </div>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg">
+                <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="font-semibold mb-4 text-lg">Realisasi Penambahan Armada (Dump Truck)</h3>
                     <div class="relative w-full h-[50vh] md:h-[40vh]">
                         <canvas id="bydArmadaChart"></canvas>
@@ -391,39 +391,39 @@
             <!-- Tab: Waskita Lempuing -->
             <div id="waskita-lempuing" class="tab-pane">
                 <h2 class="text-2xl font-bold mb-4">Proyek Waskita Irigasi Lempuing - Tanah Merah</h2>
-                 <div class="bg-gray-800 p-6 rounded-lg mb-6">
-                    <h3 class="font-semibold text-lg mb-3 text-cyan-400">Rincian Perhitungan Super Detail</h3>
+                 <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                    <h3 class="font-semibold text-lg mb-3 text-cyan-600">Rincian Perhitungan Super Detail</h3>
                      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Sisi Modal -->
-                        <div class="bg-gray-900 p-4 rounded-lg">
-                            <h4 class="font-semibold text-white mb-2">Perhitungan Modal</h4>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-900 mb-2">Perhitungan Modal</h4>
                             <div class="space-y-2 text-sm">
-                                <div class="flex justify-between"><span class="text-gray-400">Harga Modal per Truk:</span><span>Rp 2.300.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Jumlah Armada:</span><span>250 Truk</span></div>
-                                <div class="flex justify-between border-t border-gray-700 pt-2 mt-2"><span class="text-gray-400">Modal per Termin:</span><span class="font-semibold">Rp 575.000.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Jumlah Termin:</span><span>2</span></div>
-                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-400">Total Kebutuhan Modal:</span><span class="text-red-400">Rp 1.150.000.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Harga Modal per Truk:</span><span>Rp 2.300.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Jumlah Armada:</span><span>250 Truk</span></div>
+                                <div class="flex justify-between border-t border-gray-200 pt-2 mt-2"><span class="text-gray-500">Modal per Termin:</span><span class="font-semibold">Rp 575.000.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Jumlah Termin:</span><span>2</span></div>
+                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-600">Total Kebutuhan Modal:</span><span class="text-red-500">Rp 1.150.000.000</span></div>
                             </div>
                         </div>
                         <!-- Sisi Keuntungan -->
-                        <div class="bg-gray-900 p-4 rounded-lg">
-                             <h4 class="font-semibold text-white mb-2">Perhitungan Keuntungan</h4>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                             <h4 class="font-semibold text-gray-900 mb-2">Perhitungan Keuntungan</h4>
                             <div class="space-y-2 text-sm">
-                                <div class="flex justify-between"><span class="text-gray-400">Keuntungan per Truk/Hari:</span><span>Rp 50.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Jumlah Armada:</span><span>250 Truk</span></div>
-                                <div class="flex justify-between border-t border-gray-700 pt-2 mt-2"><span class="text-gray-400">Total Keuntungan/Hari:</span><span class="font-semibold">Rp 12.500.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Hari Kerja/Bulan:</span><span>22 Hari</span></div>
-                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-400">Total Keuntungan/Bulan:</span><span class="text-green-400">Rp 275.000.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Keuntungan per Truk/Hari:</span><span>Rp 50.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Jumlah Armada:</span><span>250 Truk</span></div>
+                                <div class="flex justify-between border-t border-gray-200 pt-2 mt-2"><span class="text-gray-500">Total Keuntungan/Hari:</span><span class="font-semibold">Rp 12.500.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Hari Kerja/Bulan:</span><span>22 Hari</span></div>
+                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-600">Total Keuntungan/Bulan:</span><span class="text-green-600">Rp 275.000.000</span></div>
                             </div>
                         </div>
                     </div>
-                     <div class="bg-gray-900 p-4 rounded-lg mt-6 text-center">
-                        <h4 class="font-semibold text-white">Persentase Keuntungan per Bulan</h4>
-                        <p class="text-sm text-gray-400">(Rp 275.000.000 / Rp 1.150.000.000) x 100%</p>
-                        <p class="text-3xl font-bold text-green-400 mt-1">23.9%</p>
+                     <div class="bg-gray-50 p-4 rounded-lg mt-6 text-center">
+                        <h4 class="font-semibold text-gray-900">Persentase Keuntungan per Bulan</h4>
+                        <p class="text-sm text-gray-500">(Rp 275.000.000 / Rp 1.150.000.000) x 100%</p>
+                        <p class="text-3xl font-bold text-green-600 mt-1">23.9%</p>
                      </div>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg">
+                <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="font-semibold mb-4 text-lg">Realisasi Penambahan Armada (Colt Diesel)</h3>
                     <div class="relative w-full h-[50vh] md:h-[40vh]">
                         <canvas id="lempuingArmadaChart"></canvas>
@@ -435,48 +435,48 @@
             <div id="waskita-jragung" class="tab-pane">
                  <h2 class="text-2xl font-bold mb-4">Proyek Waskita Bendungan Jragung (Semarang)</h2>
                  <div class="space-y-6">
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-cyan-400 mb-2">Material: Batu Belah</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-cyan-600 mb-2">Material: Batu Belah</h3>
                          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                            <div><p class="text-gray-400">Modal</p><p class="font-bold text-lg">Rp 400.000.000</p></div>
-                            <div><p class="text-gray-400">Keuntungan/Bulan</p><p class="font-bold text-lg">Rp 148.500.000</p></div>
-                            <div><p class="text-gray-400">Persentase</p><p class="font-bold text-lg text-green-400">37%</p></div>
+                            <div><p class="text-gray-500">Modal</p><p class="font-bold text-lg">Rp 400.000.000</p></div>
+                            <div><p class="text-gray-500">Keuntungan/Bulan</p><p class="font-bold text-lg">Rp 148.500.000</p></div>
+                            <div><p class="text-gray-500">Persentase</p><p class="font-bold text-lg text-green-600">37%</p></div>
                         </div>
-                        <div class="bg-gray-900 p-3 rounded-md">
+                        <div class="bg-gray-50 p-3 rounded-md">
                              <h4 class="font-semibold text-md mb-2">Rincian Perhitungan</h4>
-                             <div class="text-sm space-y-1 text-gray-300">
-                                 <p><span class="text-gray-400">Keuntungan per Hari:</span> Rp 135.000 x 50 mobil = Rp 6.750.000</p>
-                                 <p><span class="text-gray-400">Keuntungan per Bulan (22 hari):</span> Rp 6.750.000 x 22 = <span class="font-bold text-white">Rp 148.500.000</span></p>
+                             <div class="text-sm space-y-1 text-gray-700">
+                                 <p><span class="text-gray-500">Keuntungan per Hari:</span> Rp 135.000 x 50 mobil = Rp 6.750.000</p>
+                                 <p><span class="text-gray-500">Keuntungan per Bulan (22 hari):</span> Rp 6.750.000 x 22 = <span class="font-bold text-gray-900">Rp 148.500.000</span></p>
                              </div>
                         </div>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-cyan-400 mb-2">Material: Pasir Filter</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-cyan-600 mb-2">Material: Pasir Filter</h3>
                          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                            <div><p class="text-gray-400">Modal</p><p class="font-bold text-lg">Rp 225.000.000</p></div>
-                            <div><p class="text-gray-400">Keuntungan/Bulan</p><p class="font-bold text-lg">Rp 66.000.000</p></div>
-                            <div><p class="text-gray-400">Persentase</p><p class="font-bold text-lg text-green-400">29%</p></div>
+                            <div><p class="text-gray-500">Modal</p><p class="font-bold text-lg">Rp 225.000.000</p></div>
+                            <div><p class="text-gray-500">Keuntungan/Bulan</p><p class="font-bold text-lg">Rp 66.000.000</p></div>
+                            <div><p class="text-gray-500">Persentase</p><p class="font-bold text-lg text-green-600">29%</p></div>
                         </div>
-                         <div class="bg-gray-900 p-3 rounded-md">
+                         <div class="bg-gray-50 p-3 rounded-md">
                              <h4 class="font-semibold text-md mb-2">Rincian Perhitungan</h4>
-                             <div class="text-sm space-y-1 text-gray-300">
-                                 <p><span class="text-gray-400">Keuntungan per Hari:</span> Rp 60.000 x 50 mobil = Rp 3.000.000</p>
-                                 <p><span class="text-gray-400">Keuntungan per Bulan (22 hari):</span> Rp 3.000.000 x 22 = <span class="font-bold text-white">Rp 66.000.000</span></p>
+                             <div class="text-sm space-y-1 text-gray-700">
+                                 <p><span class="text-gray-500">Keuntungan per Hari:</span> Rp 60.000 x 50 mobil = Rp 3.000.000</p>
+                                 <p><span class="text-gray-500">Keuntungan per Bulan (22 hari):</span> Rp 3.000.000 x 22 = <span class="font-bold text-gray-900">Rp 66.000.000</span></p>
                              </div>
                         </div>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-cyan-400 mb-2">Material: Batu Rip Rap</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-cyan-600 mb-2">Material: Batu Rip Rap</h3>
                          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                            <div><p class="text-gray-400">Modal</p><p class="font-bold text-lg">Rp 400.000.000</p></div>
-                            <div><p class="text-gray-400">Keuntungan/Bulan</p><p class="font-bold text-lg">Rp 110.000.000</p></div>
-                            <div><p class="text-gray-400">Persentase</p><p class="font-bold text-lg text-green-400">27.5%</p></div>
+                            <div><p class="text-gray-500">Modal</p><p class="font-bold text-lg">Rp 400.000.000</p></div>
+                            <div><p class="text-gray-500">Keuntungan/Bulan</p><p class="font-bold text-lg">Rp 110.000.000</p></div>
+                            <div><p class="text-gray-500">Persentase</p><p class="font-bold text-lg text-green-600">27.5%</p></div>
                         </div>
-                         <div class="bg-gray-900 p-3 rounded-md">
+                         <div class="bg-gray-50 p-3 rounded-md">
                              <h4 class="font-semibold text-md mb-2">Rincian Perhitungan</h4>
-                             <div class="text-sm space-y-1 text-gray-300">
-                                <p><span class="text-gray-400">Keuntungan per Hari:</span> Rp 100.000 x 50 mobil = Rp 5.000.000</p>
-                                <p><span class="text-gray-400">Keuntungan per Bulan (22 hari):</span> Rp 5.000.000 x 22 = <span class="font-bold text-white">Rp 110.000.000</span></p>
+                             <div class="text-sm space-y-1 text-gray-700">
+                                <p><span class="text-gray-500">Keuntungan per Hari:</span> Rp 100.000 x 50 mobil = Rp 5.000.000</p>
+                                <p><span class="text-gray-500">Keuntungan per Bulan (22 hari):</span> Rp 5.000.000 x 22 = <span class="font-bold text-gray-900">Rp 110.000.000</span></p>
                              </div>
                         </div>
                     </div>
@@ -486,39 +486,39 @@
             <!-- Tab: Deltamas -->
             <div id="deltamas" class="tab-pane">
                 <h2 class="text-2xl font-bold mb-4">Proyek Deltamas PT WHTB Glass Industry - Batu Semi Boulder</h2>
-                 <div class="bg-gray-800 p-6 rounded-lg mb-6">
-                    <h3 class="font-semibold text-lg mb-3 text-cyan-400">Rincian Perhitungan Super Detail</h3>
+                 <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                    <h3 class="font-semibold text-lg mb-3 text-cyan-600">Rincian Perhitungan Super Detail</h3>
                      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Sisi Modal -->
-                        <div class="bg-gray-900 p-4 rounded-lg">
-                            <h4 class="font-semibold text-white mb-2">Perhitungan Modal</h4>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-900 mb-2">Perhitungan Modal</h4>
                             <div class="space-y-2 text-sm">
-                                <div class="flex justify-between"><span class="text-gray-400">Harga Modal per Truk:</span><span>Rp 3.600.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Jumlah Armada:</span><span>30 Truk</span></div>
-                                <div class="flex justify-between border-t border-gray-700 pt-2 mt-2"><span class="text-gray-400">Modal per Termin:</span><span class="font-semibold">Rp 108.000.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Jumlah Termin:</span><span>2</span></div>
-                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-400">Total Kebutuhan Modal:</span><span class="text-red-400">Rp 216.000.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Harga Modal per Truk:</span><span>Rp 3.600.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Jumlah Armada:</span><span>30 Truk</span></div>
+                                <div class="flex justify-between border-t border-gray-200 pt-2 mt-2"><span class="text-gray-500">Modal per Termin:</span><span class="font-semibold">Rp 108.000.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Jumlah Termin:</span><span>2</span></div>
+                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-600">Total Kebutuhan Modal:</span><span class="text-red-500">Rp 216.000.000</span></div>
                             </div>
                         </div>
                         <!-- Sisi Keuntungan -->
-                        <div class="bg-gray-900 p-4 rounded-lg">
-                             <h4 class="font-semibold text-white mb-2">Perhitungan Keuntungan</h4>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                             <h4 class="font-semibold text-gray-900 mb-2">Perhitungan Keuntungan</h4>
                             <div class="space-y-2 text-sm">
-                                <div class="flex justify-between"><span class="text-gray-400">Keuntungan per Truk/Hari:</span><span>Rp 100.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Jumlah Armada:</span><span>30 Truk</span></div>
-                                <div class="flex justify-between border-t border-gray-700 pt-2 mt-2"><span class="text-gray-400">Total Keuntungan/Hari:</span><span class="font-semibold">Rp 3.000.000</span></div>
-                                <div class="flex justify-between"><span class="text-gray-400">Hari Kerja/Bulan:</span><span>16 Hari</span></div>
-                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-400">Total Keuntungan/Bulan:</span><span class="text-green-400">Rp 48.000.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Keuntungan per Truk/Hari:</span><span>Rp 100.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Jumlah Armada:</span><span>30 Truk</span></div>
+                                <div class="flex justify-between border-t border-gray-200 pt-2 mt-2"><span class="text-gray-500">Total Keuntungan/Hari:</span><span class="font-semibold">Rp 3.000.000</span></div>
+                                <div class="flex justify-between"><span class="text-gray-500">Hari Kerja/Bulan:</span><span>16 Hari</span></div>
+                                <div class="flex justify-between font-bold text-lg border-t border-cyan-500 pt-2 mt-2"><span class="text-cyan-600">Total Keuntungan/Bulan:</span><span class="text-green-600">Rp 48.000.000</span></div>
                             </div>
                         </div>
                     </div>
-                     <div class="bg-gray-900 p-4 rounded-lg mt-6 text-center">
-                        <h4 class="font-semibold text-white">Persentase Keuntungan per Bulan</h4>
-                        <p class="text-sm text-gray-400">(Rp 48.000.000 / Rp 216.000.000) x 100%</p>
-                        <p class="text-3xl font-bold text-green-400 mt-1">22%</p>
+                     <div class="bg-gray-50 p-4 rounded-lg mt-6 text-center">
+                        <h4 class="font-semibold text-gray-900">Persentase Keuntungan per Bulan</h4>
+                        <p class="text-sm text-gray-500">(Rp 48.000.000 / Rp 216.000.000) x 100%</p>
+                        <p class="text-3xl font-bold text-green-600 mt-1">22%</p>
                      </div>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg">
+                <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="font-semibold mb-4 text-lg">Realisasi Penambahan Armada (Dump Truck)</h3>
                     <div class="relative w-full h-[50vh] md:h-[40vh]">
                         <canvas id="deltamasArmadaChart"></canvas>
@@ -530,13 +530,13 @@
             <div id="proyek-finished" class="tab-pane">
                  <h2 class="text-2xl font-bold mb-4">Proyek Finished</h2>
                  <div class="space-y-6">
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="text-xl font-semibold text-cyan-400 mb-2">Proyek Supplier PT SEPCO II INDO</h3>
-                        <p class="text-sm text-gray-400 mb-4">Laporan keuangan supply material Pasir Leles.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-cyan-600 mb-2">Proyek Supplier PT SEPCO II INDO</h3>
+                        <p class="text-sm text-gray-500 mb-4">Laporan keuangan supply material Pasir Leles.</p>
                         
                         <div class="overflow-x-auto">
                             <table class="w-full text-sm text-left">
-                                <thead class="bg-gray-700 text-gray-300 uppercase">
+                                <thead class="bg-gray-200 text-gray-600 uppercase">
                                     <tr>
                                         <th class="p-3">Keterangan</th>
                                         <th class="p-3">Pembelian ke Tambang</th>
@@ -545,23 +545,23 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="border-b border-gray-700">
+                                    <tr class="border-b border-gray-200">
                                         <td class="p-3">Material Pasir Leles (8 Truk / 217.42 m³)</td>
                                         <td class="p-3">Rp 49.680.000</td>
                                         <td class="p-3">Rp 55.442.100</td>
-                                        <td class="p-3 font-semibold text-green-400">Rp 5.762.100</td>
+                                        <td class="p-3 font-semibold text-green-600">Rp 5.762.100</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                         <div class="mt-4 bg-gray-900 p-4 rounded-md text-sm">
+                         <div class="mt-4 bg-gray-50 p-4 rounded-md text-sm">
                             <h4 class="font-semibold text-lg mb-2">Ringkasan Transaksi</h4>
                              <div class="grid grid-cols-2 gap-2">
-                                <p><span class="text-gray-400">Volume:</span> 217.42 m³</p>
-                                <p><span class="text-gray-400">Jumlah Truk:</span> 8</p>
-                                <p><span class="text-gray-400">Harga Beli:</span> Rp 230.000/m³</p>
-                                <p><span class="text-gray-400">Harga Jual:</span> Rp 255.000/m³</p>
-                                <p class="col-span-2"><span class="text-gray-400">Margin Keuntungan:</span> Rp 25.000/m³</p>
+                                <p><span class="text-gray-500">Volume:</span> 217.42 m³</p>
+                                <p><span class="text-gray-500">Jumlah Truk:</span> 8</p>
+                                <p><span class="text-gray-500">Harga Beli:</span> Rp 230.000/m³</p>
+                                <p><span class="text-gray-500">Harga Jual:</span> Rp 255.000/m³</p>
+                                <p class="col-span-2"><span class="text-gray-500">Margin Keuntungan:</span> Rp 25.000/m³</p>
                              </div>
                          </div>
                     </div>
@@ -572,23 +572,23 @@
             <div id="info-quarry" class="tab-pane">
                 <h2 class="text-2xl font-bold mb-4">Rencana Jangka Panjang: Pengelolaan Quarry Cirebon</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-gray-800 p-6 rounded-lg md:col-span-2 lg:col-span-3">
-                        <h3 class="font-semibold text-lg text-cyan-400 mb-2">Informasi Quarry</h3>
-                        <p><span class="font-medium text-gray-400">Lokasi:</span> Gunung Hanjuang, Desa Cupang, Kabupaten Cirebon</p>
-                        <p><span class="font-medium text-gray-400">Pemilik:</span> PT MMU BUKIT REZEKI</p>
-                        <p><span class="font-medium text-gray-400">Pengelola:</span> PT CBA</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md md:col-span-2 lg:col-span-3">
+                        <h3 class="font-semibold text-lg text-cyan-600 mb-2">Informasi Quarry</h3>
+                        <p><span class="font-medium text-gray-500">Lokasi:</span> Gunung Hanjuang, Desa Cupang, Kabupaten Cirebon</p>
+                        <p><span class="font-medium text-gray-500">Pemilik:</span> PT MMU BUKIT REZEKI</p>
+                        <p><span class="font-medium text-gray-500">Pengelola:</span> PT CBA</p>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="font-semibold text-lg text-cyan-400 mb-2">Potensi Quarry</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-semibold text-lg text-cyan-600 mb-2">Potensi Quarry</h3>
                         <p class="text-2xl font-bold">21 Juta m³</p>
-                        <p class="text-gray-400">Estimasi stok material</p>
-                        <hr class="border-gray-600 my-4">
+                        <p class="text-gray-500">Estimasi stok material</p>
+                        <hr class="border-gray-200 my-4">
                         <p class="text-2xl font-bold">12 Hektar</p>
-                        <p class="text-gray-400">Luas area</p>
+                        <p class="text-gray-500">Luas area</p>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="font-semibold text-lg text-cyan-400 mb-2">Jenis Material</h3>
-                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-semibold text-lg text-cyan-600 mb-2">Jenis Material</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
                             <li>Andesit</li>
                             <li>Lime Stone</li>
                             <li>Batu Abu</li>
@@ -596,42 +596,42 @@
                             <li>Base Cos</li>
                         </ul>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg">
-                        <h3 class="font-semibold text-lg text-cyan-400 mb-2">Platform Teknologi Enterprise-Grade</h3>
-                        <p class="text-xs text-gray-400 mb-3">Dibangun secara internal oleh tim CBA untuk memastikan efisiensi, transparansi, dan keamanan data operasional.</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-semibold text-lg text-cyan-600 mb-2">Platform Teknologi Enterprise-Grade</h3>
+                        <p class="text-xs text-gray-500 mb-3">Dibangun secara internal oleh tim CBA untuk memastikan efisiensi, transparansi, dan keamanan data operasional.</p>
                         <ul class="space-y-3 text-sm">
                             <li>
-                                <span class="font-bold text-white">Enterprise Resource Planning (ERP)</span>
-                                <p class="text-gray-300 text-xs">Sistem terpusat yang memonitor semua aspek operasional secara <i>real-time</i>.</p>
+                                <span class="font-bold text-gray-900">Enterprise Resource Planning (ERP)</span>
+                                <p class="text-gray-700 text-xs">Sistem terpusat yang memonitor semua aspek operasional secara <i>real-time</i>.</p>
                             </li>
                             <li>
-                                <span class="font-bold text-white">Aplikasi Proyeksi Keuangan</span>
-                                <p class="text-gray-300 text-xs">Alat analisis prediktif untuk simulasi "what-if" berbasis data.</p>
+                                <span class="font-bold text-gray-900">Aplikasi Proyeksi Keuangan</span>
+                                <p class="text-gray-700 text-xs">Alat analisis prediktif untuk simulasi "what-if" berbasis data.</p>
                             </li>
                             <li>
-                                <span class="font-bold text-white">3-Tier Stock System</span>
-                                 <p class="text-gray-300 text-xs">Memantau alur material secara <i>live</i> dari bahan mentah hingga pengiriman.</p>
+                                <span class="font-bold text-gray-900">3-Tier Stock System</span>
+                                 <p class="text-gray-700 text-xs">Memantau alur material secara <i>live</i> dari bahan mentah hingga pengiriman.</p>
                             </li>
                         </ul>
-                        <div class="mt-4 pt-3 border-t border-gray-700 text-center text-xs text-gray-400">
+                        <div class="mt-4 pt-3 border-t border-gray-200 text-center text-xs text-gray-500">
                             Akses di: quarrycirebon.caruntbersamaabadi.com
                         </div>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg md:col-span-2 lg:col-span-3">
-                        <h3 class="font-semibold text-lg text-cyan-400 mb-2">Target Pengembangan (Roadmap)</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-md md:col-span-2 lg:col-span-3">
+                        <h3 class="font-semibold text-lg text-cyan-600 mb-2">Target Pengembangan (Roadmap)</h3>
                         <div class="flex flex-wrap justify-center items-center gap-y-4 gap-x-2">
                             <div class="text-center p-2">
                                 <p class="bg-green-500 text-white rounded-full px-4 py-1 text-sm">Sudah Berjalan</p>
                                 <p class="mt-2 font-medium">Supplier & Pasar</p>
                             </div>
-                            <div class="text-gray-500 font-bold text-2xl hidden sm:block">&rarr;</div>
+                            <div class="text-gray-400 font-bold text-2xl hidden sm:block">&rarr;</div>
                              <div class="text-center p-2">
                                 <p class="bg-cyan-500 text-white rounded-full px-4 py-1 text-sm">Progress</p>
                                 <p class="mt-2 font-medium">Quarry Tambang</p>
                             </div>
-                             <div class="text-gray-500 font-bold text-2xl hidden sm:block">&rarr;</div>
+                             <div class="text-gray-400 font-bold text-2xl hidden sm:block">&rarr;</div>
                             <div class="text-center p-2">
-                                <p class="bg-yellow-500 text-black rounded-full px-4 py-1 text-sm">Target Selanjutnya</p>
+                                <p class="bg-yellow-400 text-gray-800 rounded-full px-4 py-1 text-sm">Target Selanjutnya</p>
                                 <p class="mt-2 font-medium">Armada Truck & Konstruksi</p>
                             </div>
                         </div>
@@ -661,8 +661,8 @@
             };
 
             const chartColors = {
-                background: ['#34D399', '#60A5FA', '#FBBF24', '#F87171', '#A78BFA', '#2DD4BF', '#F472B6'],
-                border: '#4B5563'
+                background: ['#10B981', '#3B82F6', '#F59E0B', '#EF4444', '#8B5CF6', '#14B8A6', '#EC4899'],
+                border: 'rgba(0, 0, 0, 0.1)'
             };
 
             // Logika Tab
@@ -671,12 +671,12 @@
 
             const switchTab = (tabId) => {
                  tabButtons.forEach(btn => {
-                    btn.classList.remove('active', 'text-cyan-400', 'border-cyan-400');
-                    btn.classList.add('text-gray-400', 'hover:text-white', 'hover:border-gray-500');
+                    btn.classList.remove('active', 'text-cyan-600', 'border-cyan-600');
+                    btn.classList.add('text-gray-500', 'hover:text-gray-700', 'hover:border-gray-400');
                 });
                 const button = document.querySelector(`button[data-tab="${tabId}"]`);
-                button.classList.add('active', 'text-cyan-400', 'border-cyan-400');
-                button.classList.remove('text-gray-400', 'hover:text-white', 'hover:border-gray-500');
+                button.classList.add('active', 'text-cyan-600', 'border-cyan-600');
+                button.classList.remove('text-gray-500', 'hover:text-gray-700', 'hover:border-gray-400');
 
                 tabPanes.forEach(pane => {
                     if (pane.id === tabId) {
@@ -714,19 +714,19 @@
                         plugins: {
                             legend: {
                                 labels: {
-                                    color: '#D1D5DB'
+                                    color: '#4B5563'
                                 }
                             }
                         },
                         scales: {
                             y: {
                                 beginAtZero: true,
-                                ticks: { color: '#9CA3AF' },
-                                grid: { color: '#4B5563' }
+                                ticks: { color: '#6B7280' },
+                                grid: { color: '#E5E7EB' }
                             },
                             x: {
-                                ticks: { color: '#9CA3AF' },
-                                grid: { color: '#4B5563' }
+                                ticks: { color: '#6B7280' },
+                                grid: { color: '#E5E7EB' }
                             }
                         },
                         ...customOptions
@@ -757,6 +757,4 @@
     </script>
 </body>
 </html>
-
-
 
